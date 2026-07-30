@@ -10,7 +10,7 @@
         {
           name: "Dhun Song",
           artist: "Arijit singh",
-          image: "image/image.png",
+          image: "image/image2.png",
           music:
             "music/Dhun Song  Saiyaara  Ahaan Panday, Aneet Padda  Mithoon  Arijit Singh  In Cinemas 18 July.mp3", // <-- apna exact filename likhna
         },
@@ -18,7 +18,7 @@
         {
           name: "Ehsaas",
           artist: "Musafir cafe",
-          image: "image/image2.png",
+          image: "image/image.png",
           music:
             "music/Ehsaas (Lyric Video) Faheem Abdullah  Duha Shah  Vaibhav Pani  Hyder Dar.mp3", // <-- exact filename
         },
