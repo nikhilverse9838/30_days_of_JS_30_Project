@@ -2,7 +2,7 @@
         {
           name: "Darkhaast",
           artist: "Arijit Singh",
-          image: "image/468-thumbnail.png",
+          image: "image/image.png",
           music:
             "music/Arijit Singh - Darkhaast (Lyrics) Ft. Sunidhi Chauhan  Shivaay.mp3",
         },
@@ -17,8 +17,15 @@
 
         {
           name: "Ehsaas",
-          artist: "Musafir cafe",
-          image: "image/image.png",
+          artist: "Narendra Modi",
+          image: "image/image3.png",
+          music:
+            "music/Ehsaas (Lyric Video) Faheem Abdullah  Duha Shah  Vaibhav Pani  Hyder Dar.mp3", // <-- exact filename
+        },
+        {
+          name: "Tumhe kitna pyaar krte ",
+          artist: "Arijit singh",
+          image: "image/image1.png",
           music:
             "music/Ehsaas (Lyric Video) Faheem Abdullah  Duha Shah  Vaibhav Pani  Hyder Dar.mp3", // <-- exact filename
         },
