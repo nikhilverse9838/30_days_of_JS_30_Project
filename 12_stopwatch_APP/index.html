@@ -16,6 +16,7 @@
       </div>
     </div>
     <script>
+
       let [seconds, minutes, hours] = [0, 0, 0];
       displayTime = document.getElementById("display-time");
       let timer  = null;
@@ -35,18 +36,15 @@
         displayTime.innerHTML = h + ":" + m + ":" + s;
       }
       function watchStart () {
-         console.log("button daba haiii")
         if (timer!= null){
           clearInterval(timer);
         }
         timer = setInterval(stopwtch,1000);
       }
       function watchStop(){
-        console.log("button daba haiii")
         clearInterval(timer);
       }
       function watchReset(){
-        console.log("button daba haiii")
         clearInterval(timer);
         [seconds,minutes,hours] = [0,0,0];
         displayTime.innerHTML = "00:00:00";
