@@ -8,7 +8,23 @@
 </head>
 <body>
   <div class="container">
-    <button type="submit" class="btn"> Submit </button>
+    <button type="submit" class="btn" onclick="showPopUp()"> Submit </button>
+    <div class="popup" id="popup">
+      <img src="404-tick.png
+      " >
+      <h2>Thank You!</h2>
+      <p>Your details has been submitted successfully. Thanks!</p>
+      <button type="button" onclick="hidePopUp()"> OK </button>
+    </div>
   </div>
+  <script>
+   let popup = document.getElementById("popup");
+   function showPopUp(){
+    popup.classList.add("open-popup");
+   }
+   function hidePopUp(){
+    popup.classList.remove("open-popup");
+   }
+  </script>
 </body>
 </html>
