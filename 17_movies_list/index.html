@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollywood Movie Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 Bollywood Movie Tracker</h1>
+        <p>1985 – 2015 | Must Watch Collection</p>
+    </header>
+
+    <section class="stats">
+        <div class="stat-box">
+            <h2 id="totalMovies">0</h2>
+            <p>Total Movies</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 id="watchedMovies">0</h2>
+            <p>Watched</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 id="remainingMovies">0</h2>
+            <p>Remaining</p>
+        </div>
+    </section>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <p class="progress-text" id="progressText">0% Completed</p>
+
+    <section class="controls">
+
+        <input type="text" id="searchInput" placeholder="Search movie...">
+
+        <select id="filterGenre">
+            <option value="all">All Genres</option>
+            <option value="Emotional Drama">Emotional Drama</option>
+            <option value="Action">Action</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Romance">Romance</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Realistic Cinema">Realistic Cinema</option>
+            <option value="Historical">Historical</option>
+        </select>
+
+        <select id="filterWatched">
+            <option value="all">All Movies</option>
+            <option value="watched">Watched</option>
+            <option value="unwatched">Not Watched</option>
+        </select>
+
+        <button onclick="openModal()">+ Add Movie</button>
+
+    </section>
+
+    <main id="movieContainer"></main>
+
+
+    <!-- Add Movie Modal -->
+
+    <div class="modal" id="movieModal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2>Add New Movie</h2>
+
+            <input type="text" id="movieName" placeholder="Movie Name">
+
+            <input type="number" id="movieYear" placeholder="Release Year">
+
+            <select id="movieGenre">
+                <option value="Emotional Drama">Emotional Drama</option>
+                <option value="Action">Action</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Realistic Cinema">Realistic Cinema</option>
+                <option value="Historical">Historical</option>
+            </select>
+
+            <button onclick="addMovie()">Add Movie</button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>Made for Bollywood Lovers ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
