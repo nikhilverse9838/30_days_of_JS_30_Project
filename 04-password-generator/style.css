@@ -36,18 +36,30 @@ body{
 }
 .display img{
   width: 30px;
+}
+.copy-button{
+  border: 0;
+  background: transparent;
   cursor: pointer;
+  padding: 4px;
+  line-height: 0;
+}
+.copy-button:focus-visible,
+.generate-button:focus-visible{
+  outline: 3px solid #80e5b4;
+  outline-offset: 3px;
 }
 .display input {
   border: 0;
   outline: 0;
   font-size:24px ;
+  min-width: 0;
 }
-.container button img{
+.generate-button img{
   width: 28px;
   margin-right: 10px;
 }
-.container button{
+.generate-button{
   border: 0;
   outline: 0;
   background: #019f55;
@@ -60,4 +72,23 @@ body{
   padding: 16px 26px;
   border-radius: 5px;
   cursor: pointer;
+}
+.status{
+  min-height: 24px;
+  color: #b7f8d1;
+  font-size: 16px;
+}
+@media (max-width: 600px){
+  .container{
+    margin: 20% auto;
+  }
+  .container h1{
+    font-size: 34px;
+  }
+  .display{
+    padding: 18px 15px;
+  }
+  .display input{
+    font-size: 18px;
+  }
 }

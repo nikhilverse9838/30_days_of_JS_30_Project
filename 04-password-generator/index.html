@@ -10,10 +10,13 @@
   <div class="container">
     <h1>Generate a <br> <span>Random Password</span></h1>
     <div class="display">
-      <input type="text" id="password" placeholder="password" >
-      <img src="images/copy.png" alt=""  onclick="copyPassword()">
+      <input type="text" id="password" placeholder="Your password will appear here" readonly aria-label="Generated password">
+      <button class="copy-button" id="copyButton" type="button" aria-label="Copy password" title="Copy password">
+        <img src="images/copy.png" alt="">
+      </button>
     </div>
-    <button onclick="createPassword()"><img src="images/generate.png">Generate password</button>
+    <button class="generate-button" id="generateButton" type="button"><img src="images/generate.png" alt="">Generate password</button>
+    <p class="status" id="status" aria-live="polite"></p>
   </div>
   <script src="script.js"></script>
 </body>
